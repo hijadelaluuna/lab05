@@ -43,7 +43,7 @@ $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05  # Доба�
 ```ShellSession
 $ mkdir third-party # Создание папки
 $ git submodule add https://github.com/google/googletest third-party/gtest # Скачивание удаленного репозитория в указанную папку
-Клонирование в «/home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/third-party/gtest»…
+Клонирование в «/home/luna/hijadelaluuna/workspace/projects/lab05/third-party/gtest»…
 remote: Enumerating objects: 16892, done.
 remote: Total 16892 (delta 0), reused 0 (delta 0), pack-reused 16892
 Получение объектов: 100% (16892/16892), 5.96 MiB | 107.00 KiB/s, готово.
@@ -139,7 +139,7 @@ $ cmake -H. -B_build -DBUILD_TESTS=ON  # Конфигурирование
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/_build
+-- Build files have been written to: /home/luna/hijadelaluuna/workspace/projects/lab05/_build
 
 $ cmake --build _build   # Компиляция
 Scanning dependencies of target print
@@ -169,7 +169,7 @@ Scanning dependencies of target gmock_main
 
 $ cmake --build _build --target test   # Компиляция указанного
 Running tests...
-Test project /home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/_build
+Test project /home/luna/hijadelaluuna/workspace/projects/lab05/_build
     Start 1: check
 1/1 Test #1: check ............................   Passed    0.00 sec
 
@@ -180,7 +180,7 @@ Total Test time (real) =   0.01 sec
 Проверка тестов
 ```ShellSession
 $ _build/check  # Исполнение файла с тестами
-Running main() from /home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/third-party/gtest/googletest/src/gtest_main.cc
+Running main() from /home/luna/hijadelaluuna/workspace/projects/lab05/third-party/gtest/googletest/src/gtest_main.cc
 [==========] Running 1 test from 1 test case.
 [----------] Global test environment set-up.
 [----------] 1 test from Print
@@ -194,9 +194,9 @@ Running main() from /home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/t
 
 $ cmake --build _build --target test -- ARGS=--verbose  # Компиляция с выводом всей информации
 Running tests...
-UpdateCTestConfiguration  from :/home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/_build/DartConfiguration.tcl
-UpdateCTestConfiguration  from :/home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/_build/DartConfiguration.tcl
-Test project /home/absinthetoxin/CrazyOverdose/workspace/projects/lab05/_build
+UpdateCTestConfiguration  from :/home/luna/hijadelaluuna/workspace/projects/lab05/_build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/luna/hijadelaluuna/workspace/projects/lab05/_build/DartConfiguration.tcl
+Test project /home/luna/hijadelaluuna/workspace/projects/lab05/_build
 Constructing a list of tests
 Done constructing a list of tests
 Updating test list for fixtures
@@ -350,26 +350,26 @@ Stage this hunk [y,n,q,a,d,K,j,J,g,/,e,?]? y
  Работа с Travis CI
 Stage this hunk [y,n,q,a,d,K,j,J,g,/,e,?]? y
 @@ -269,7 +269,7 @@ Description: ???
- CrazyOverdose/lab03 (active: no, admin: yes, push: yes, pull: yes)
+hijadelaluuna/lab03 (active: no, admin: yes, push: yes, pull: yes)
  Description: ???
  
--CrazyOverdose/lab04 (active: yes, admin: yes, push: yes, pull: yes)
-+CrazyOverdose/lab05 (active: yes, admin: yes, push: yes, pull: yes)
+-hijadelaluuna/lab04 (active: yes, admin: yes, push: yes, pull: yes)
++hijadelaluuna/lab05 (active: yes, admin: yes, push: yes, pull: yes)
  Description: ???
  
- CrazyOverdose/lab05 (active: no, admin: yes, push: yes, pull: yes)
+ hijadelaluuna/lab05 (active: no, admin: yes, push: yes, pull: yes)
 Stage this hunk [y,n,q,a,d,K,j,J,g,/,e,?]? y
 @@ -291,10 +291,10 @@ CrazyOverdose/labaa02 (active: no, admin: yes, push: yes, pull: yes)
  Description: Изучение систем контроля версий на примере Git
  
  $ travis enable   # Активация проекта
--Detected repository as CrazyOverdose/lab04, is this correct? |yes| yes
--CrazyOverdose/lab04: enabled :)
-+Detected repository as CrazyOverdose/lab05, is this correct? |yes| yes
-+CrazyOverdose/lab05: enabled :)
+-Detected repository as hijadelaluuna/lab04, is this correct? |yes| yes
+-hijadelaluuna/lab04: enabled :)
++Detected repository as hijadelaluuna/lab05, is this correct? |yes| yes
++hijadelaluuna/lab05: enabled :)
  $ travis whatsup   # Список последних сборок
--CrazyOverdose/lab04 passed: #1
-+CrazyOverdose/lab05 passed: #1
+-hijadelaluuna/lab04 passed: #1
++hijadelaluuna/lab05 passed: #1
  $ travis branches    # Список последних сборок по веткам проекта
  master:  #1    passed     added CI
  $ travis history  # История сборок для проекта
@@ -378,8 +378,8 @@ Stage this hunk [y,n,q,a,d,K,j,J,g,/,s,e,?]? y
  State:         passed
  Type:          push
  Branch:        master
--Compare URL:   https://github.com/CrazyOverdose/lab04/compare/89df61653546^...da3553aea864
-+Compare URL:   https://github.com/CrazyOverdose/lab05/compare/89df61653546^...da3553aea864
+-Compare URL:   https://github.com/hijadelaluuna/lab04/compare/89df61653546^...da3553aea864
++Compare URL:   https://github.com/hijadelaluuna/lab05/compare/89df61653546^...da3553aea864
  Duration:      28 sec
  Started:       2019-06-09 19:09:31
  Finished:      2019-06-09 19:09:59
@@ -408,10 +408,10 @@ To https://github.com/CrazyOverdose/lab05
 Авторизация и активация репозитория в travis
 ```ShellSession
 $ travis login --auto
-Successfully logged in as CrazyOverdose!
+Successfully logged in as hijadelaluuna!
 $ travis enable
-Detected repository as CrazyOverdose/lab05, is this correct? |yes| y
-CrazyOverdose/lab05: enabled :)
+Detected repository as hijadelaluuna/lab05, is this correct? |yes| y
+hijadelaluuna/lab05: enabled :)
 ```
 Сохранение результата
 ```ShellSession
